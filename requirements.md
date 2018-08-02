@@ -1,0 +1,3 @@
+- [] Create arrays for card ranks and suits (separate arrays for each)
+- [] Shuffle arrays, creating a 52 card deck array (classList.push)
+- [] randomly generate a card from deck array (math.random() * 1))
