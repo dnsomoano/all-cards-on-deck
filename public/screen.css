@@ -13,6 +13,11 @@ body {
   flex-direction: row;
 }
 
+.shuffle-button {
+  background-image:url('images/bf4e6430-8665-4dd5-8a51-2be39b1d5977.jpg');
+  object-fit: none;
+}
+
 ul {
   list-style: none;
 }

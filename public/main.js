@@ -71,8 +71,6 @@ const resultCard = () => {
 };
 
 // Event listeners
-document.querySelector(".shuffle-button").addEventListener("click", shuffle);
+document.querySelector(".shuffle-button").addEventListener("click", createDeckAndShuffle);
 // const randomResultSelector = document.querySelector('.random-result').value
 // Event listener for testing shuffle
-// document.querySelector(".shuffle-button").addEventListener("click", shuffle);
-createDeckAndShuffle();
