@@ -24,7 +24,7 @@ const ranks = [
 let deck = [];
 
 // Functions are daisy-chained together
-const createDeckAndShuffle = () => {
+const createDeck = () => {
   // First loop = 13 * Second loop 4 = 52 loops
   // First loop
   deck = [];
@@ -34,12 +34,11 @@ const createDeckAndShuffle = () => {
       // Bucket for temporary values
       deck.push(ranks[i] + " of " + suits[j]);
       // Call list of cards
-      //   console.log(cards);
+      //   console.log(deck);
     }
   }
   // Call length of array to confirm 52 cards
-  //   console.log(cards.length);
-  shuffle();
+  //   console.log(deck.length);
 };
 
 // Fisher-Yates Shuffle
@@ -55,7 +54,6 @@ let shuffle = () => {
     deck[i] = temp;
   }
   // pop method removes the last element in the array deck
-  resultCard();
 };
 
 const resultCard = () => {
@@ -70,7 +68,13 @@ const resultCard = () => {
   document.querySelector("#random-result").appendChild(newLi);
 };
 
+const init = () => {
+  createDeck();
+  shuffle();
+  resultCard();
+}
+
 // Event listeners
-document.querySelector(".shuffle-button").addEventListener("click", createDeckAndShuffle);
+document.querySelector(".shuffle-button").addEventListener("click", init);
 // const randomResultSelector = document.querySelector('.random-result').value
 // Event listener for testing shuffle
