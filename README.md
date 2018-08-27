@@ -32,6 +32,7 @@ Adventure Mode
 - [ ] Implement a way to deal cards into two or more hands
 Epic Mode
 - [ ] Implement the game of War
+
 Additional Resources
 - - - - - - - - - - -
 A Hint on Random Numbers
